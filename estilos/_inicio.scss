@@ -1,0 +1,34 @@
+
+section.carrusel{
+    width: 90%;
+    margin: auto;
+}
+
+section.resumen{
+    width: 90%;
+    margin: auto;
+    height: 200px;
+}
+
+section.servicios{
+    width: 90%;
+    margin: auto;
+}
+
+section.productos-destacados{
+    width: 90%;
+    margin: auto;
+}
+section.principales-clientes{
+    width: 90%;
+    border: 1px solid;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 100px;
+    gap: 4px;
+    div.cliente{
+        border: 1px solid#15BFBF;
+        text-align: center;
+    }
+}
