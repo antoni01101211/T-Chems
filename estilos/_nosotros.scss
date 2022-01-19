@@ -6,16 +6,14 @@
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 150px;
     gap: 10px;
+    div.info-nosotros{
+        border: 1px solid #15BFBF;
+    }
+    div.imagen-nosotros{
+        border: 1px solid greenyellow;
+    }
 }
-
-.info-nosotros{
-    border: 1px solid #15BFBF;
-}
-.imagen-nosotros{
-    border: 1px solid greenyellow;
-}
-
-.codigo-etica{
+section.codigo-etica{
     display: grid;
     width: 90%;
     margin: auto;
@@ -24,13 +22,12 @@
     grid-template-rows: 150px;
     gap: 10px;
     align-content: center;
+    div.valor{
+        text-align: center;
+        border: 1px solid salmon;
+    }
 }
-div.valor{
-    text-align: center;
-    border: 1px solid salmon;
-}
-
-.sectores-enfocados{
+section.sectores-enfocados{
     display: grid;
     width: 90%;
     margin: auto;
@@ -39,8 +36,8 @@ div.valor{
     grid-template-rows: 150px;
     gap: 10px;
     align-content: center;
-}
-.sector{
-    text-align: center;
-    border: 1px solid #15BFBF;
+    div.sector{
+            text-align: center;
+            border: 1px solid #15BFBF;
+    }
 }

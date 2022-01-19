@@ -131,15 +131,15 @@ section.principales-clientes div.cliente {
   gap: 10px;
 }
 
-.info-nosotros {
+.cuadro-1 div.info-nosotros {
   border: 1px solid #15BFBF;
 }
 
-.imagen-nosotros {
+.cuadro-1 div.imagen-nosotros {
   border: 1px solid greenyellow;
 }
 
-.codigo-etica {
+section.codigo-etica {
   display: -ms-grid;
   display: grid;
   width: 90%;
@@ -154,12 +154,12 @@ section.principales-clientes div.cliente {
       align-content: center;
 }
 
-div.valor {
+section.codigo-etica div.valor {
   text-align: center;
   border: 1px solid salmon;
 }
 
-.sectores-enfocados {
+section.sectores-enfocados {
   display: -ms-grid;
   display: grid;
   width: 90%;
@@ -174,7 +174,7 @@ div.valor {
       align-content: center;
 }
 
-.sector {
+section.sectores-enfocados div.sector {
   text-align: center;
   border: 1px solid #15BFBF;
 }
