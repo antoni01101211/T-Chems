@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
     background-color: color-1;
     font-size: 62.5%;
@@ -68,3 +69,12 @@ footer{
 @import "productos";
 @import "servicios";
 @import "contacto";
+=======
+@import "parciales/paletacolores";
+@import "parciales/generales";
+@import "parciales/contacto";
+@import "parciales/inicio";
+@import "parciales/nosotros";
+@import "parciales/productos";
+@import "parciales/servicios";
+>>>>>>> 2efd0d774b0e8fdebdb210e4113f39e107c5b50b
