@@ -1,9 +1,14 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 body{
-    background-color: color-1;
+    background-color: $p1c2;
 }
 h1.t{
-    color: #f2f2f2;
-    background-color:#223740 ;
+    color: $p1c1;
+    background-color: $p1c3 ;
     text-align: center;
     margin: 0px;
     padding: 0px;
@@ -15,26 +20,46 @@ h2.subtitle{
     margin-bottom: 15px;
     text-align: center;
 }
-ul.menu{
-    list-style-type: none;
-    background-color:#15BFBF;
-    overflow: hidden;
-    margin: 0px;
-    padding: 0px;
-    li.menu a{
-        float: left;
-        font-size: 24px;
-        display: block;
-        padding: 12px;
-        color: white;
-        text-decoration: none;
-        &:hover{
-            background-color: #223740;
-            color: #f2f2f2;
+// deG
+.nav{
+    background-color: $p1c1;
+    // color: $p1c3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+
+    &_list{
+        list-style-type: none;
+        
+        &_item{
+            display: inline-block;
+            padding: 10px 10px;
+            a{
+                color: $p1c3;
+                text-decoration: none;
+            }
+            a:hover{
+                color: $p1c5;
+            }
         }
     }
-}
 
+}
+.logo{
+    height: 12vh;
+    padding: 5px 5px;
+}
+.menu{
+    display: none;
+
+    &_line{
+        width: 20px;
+        height: 3px;
+        background-color: $p1c2;
+        margin-bottom: 4px;
+    }
+}
 footer{
     width: 100%;
     height: 300px;
@@ -58,5 +83,39 @@ footer{
             width: 100%;
             height: 240px; 
         }
+    }
+}
+
+@media all and (max-width: 480px){
+    .nav{
+        flex-direction: column;
+        position: relative;
+        ul{
+            padding-left: 0;
+        }
+    }
+    .nav_logo{
+        width: 100%;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+    .nav_list_item {
+        display: block;
+        padding: 10px 10px;
+        border-top: 1px solid white;
+    }
+    .nav_list {
+        list-style-type: none;
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+        display: none;
+    }
+    .active{
+        display: block;
     }
 }

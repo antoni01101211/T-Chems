@@ -1,10 +1,18 @@
+/*  */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 body {
-  background-color: color-1;
+  background-color: #F2F2F2;
 }
 
 h1.t {
-  color: #f2f2f2;
-  background-color: #223740;
+  color: #252526;
+  background-color: #D9D9D9;
   text-align: center;
   margin: 0px;
   padding: 0px;
@@ -18,26 +26,51 @@ h2.subtitle {
   text-align: center;
 }
 
-ul.menu {
-  list-style-type: none;
-  background-color: #15BFBF;
-  overflow: hidden;
-  margin: 0px;
-  padding: 0px;
+.nav {
+  background-color: #252526;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
 }
 
-ul.menu li.menu a {
-  float: left;
-  font-size: 24px;
-  display: block;
-  padding: 12px;
-  color: white;
+.nav_list {
+  list-style-type: none;
+}
+
+.nav_list_item {
+  display: inline-block;
+  padding: 10px 10px;
+}
+
+.nav_list_item a {
+  color: #D9D9D9;
   text-decoration: none;
 }
 
-ul.menu li.menu a:hover {
-  background-color: #223740;
-  color: #f2f2f2;
+.nav_list_item a:hover {
+  color: #3F8C7E;
+}
+
+.logo {
+  height: 12vh;
+  padding: 5px 5px;
+}
+
+.menu {
+  display: none;
+}
+
+.menu_line {
+  width: 20px;
+  height: 3px;
+  background-color: #F2F2F2;
+  margin-bottom: 4px;
 }
 
 footer {
@@ -77,6 +110,51 @@ footer div.f-item div.fitem:nth-child(4) {
 footer div.f-item iframe.map {
   width: 100%;
   height: 240px;
+}
+
+@media all and (max-width: 480px) {
+  .nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+  }
+  .nav ul {
+    padding-left: 0;
+  }
+  .nav_logo {
+    width: 100%;
+  }
+  .menu {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+  .nav_list_item {
+    display: block;
+    padding: 10px 10px;
+    border-top: 1px solid white;
+  }
+  .nav_list {
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    display: none;
+  }
+  .active {
+    display: block;
+  }
+}
+
+section.formulario {
+  width: 90%;
+  height: 900 px;
+  margin: auto;
+  margin-top: 100px;
+  border: 1px solid;
 }
 
 section.carrusel {
@@ -178,14 +256,4 @@ section.sectores-enfocados div.sector {
   text-align: center;
   border: 1px solid #15BFBF;
 }
-
-section.formulario {
-  width: 90%;
-  height: 900 px;
-  margin: auto;
-  margin-top: 100px;
-  border: 1px solid;
-}
-
-/*  */
 /*# sourceMappingURL=t-tribokem.css.map */
