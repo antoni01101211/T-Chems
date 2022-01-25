@@ -23,11 +23,11 @@ h2.subtitle{
 // deG
 .nav{
     background-color: $p1c1;
-    // color: $p1c3;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    font-family: "lato",sans-serif;
 
     &_list{
         list-style-type: none;
@@ -59,6 +59,12 @@ h2.subtitle{
         background-color: $p1c2;
         margin-bottom: 4px;
     }
+}
+.carousel{
+    width: 80vw;
+    // height: 2rem;
+    margin: auto;
+    padding: 0;
 }
 footer{
     width: 100%;

@@ -36,7 +36,8 @@ h2.subtitle {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  font-family: "lato",sans-serif;
 }
 
 .nav_list {
@@ -71,6 +72,12 @@ h2.subtitle {
   height: 3px;
   background-color: #F2F2F2;
   margin-bottom: 4px;
+}
+
+.carousel {
+  width: 80vw;
+  margin: auto;
+  padding: 0;
 }
 
 footer {
