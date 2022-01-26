@@ -1,75 +1,4 @@
-<<<<<<< HEAD
-body{
-    background-color: color-1;
-    font-size: 62.5%;
-}
-h1.t{
-    color: #f2f2f2;
-    background-color:#223740 ;
-    text-align: center;
-    margin: 0px;
-    padding: 0px;
-    font-size: 70px;
-    opacity: 0.8;
-}
-h2.subtitle{
-    margin-top: 10px;
-    margin-bottom: 15px;
-    text-align: center;
-}
-ul.menu{
-    list-style-type: none;
-    background-color:#15BFBF;
-    overflow: hidden;
-    margin: 0px;
-    padding: 0px;
-    li.menu a{
-        float: left;
-        font-size: 24px;
-        display: block;
-        padding: 12px;
-        color: white;
-        text-decoration: none;
-        &:hover{
-            background-color: #223740;
-            color: #f2f2f2;
-        }
-    }
-}
 
-footer{
-    width: 100%;
-    height: 300px;
-    border: 1px solid;
-    background-color: #223740;
-    color: #f2f2f2;
-    display:grid;
-    grid-template-columns: 20% 20% 20% 25%;
-    grid-template-rows: 250px;
-    gap: 5px;
-    align-content: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    div.f-item{
-        /*border: 1px solid red ;*/
-        align-self:center;
-        div.fitem:nth-child(4){
-            align-self: start;
-            height: 240;
-        }
-        iframe.map{
-            width: 100%;
-            height: 240px; 
-        }
-    }
-}
-
-@import "inicio";
-@import "nosotros";
-@import "productos";
-@import "servicios";
-@import "contacto";
-=======
 @import "parciales/paletacolores";
 @import "parciales/generales";
 @import "parciales/contacto";
@@ -77,4 +6,4 @@ footer{
 @import "parciales/nosotros";
 @import "parciales/productos";
 @import "parciales/servicios";
->>>>>>> 2efd0d774b0e8fdebdb210e4113f39e107c5b50b
+
