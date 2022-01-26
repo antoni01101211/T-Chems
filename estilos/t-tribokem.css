@@ -13,10 +13,19 @@ html {
 }
 
 body {
+<<<<<<< HEAD
   background: #f2f2f2;
   background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(rgba(159, 161, 166, 0.616667)));
   background: linear-gradient(180deg, #f2f2f2 0%, rgba(159, 161, 166, 0.616667) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f2f2f2",endColorstr="#9fa1a6",GradientType=1);
+=======
+<<<<<<< HEAD
+  background-color: color-1;
+  font-size: 62.5%;
+=======
+  background-color: #F2F2F2;
+>>>>>>> 2efd0d774b0e8fdebdb210e4113f39e107c5b50b
+>>>>>>> 157b81bdbb65ca2a334564fb65ee9ba1fc321f89
 }
 
 h1.t {
@@ -107,6 +116,7 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-size: 1.2rem;
 }
 
 footer div.f-item {
