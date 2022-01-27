@@ -9,11 +9,11 @@ html{
 }
 body{
     // background-color: $p1c2;
-    background: rgb(242,242,242);
-    background: -moz-linear-gradient(180deg, rgba(242,242,242,1) 0%, rgba(159,161,166,0.6166666495699842) 100%);
-    background: -webkit-linear-gradient(180deg, rgba(242,242,242,1) 0%, rgba(159,161,166,0.6166666495699842) 100%);
-    background: linear-gradient(180deg, rgba(242,242,242,1) 0%, rgba(159,161,166,0.6166666495699842) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f2f2f2",endColorstr="#9fa1a6",GradientType=1);    
+    background: rgb(189,217,89);
+    background: -moz-linear-gradient(130deg, rgba(189,217,89,1) 25%, rgba(160,205,223,1) 65%, rgba(242,242,242,1) 100%);
+    background: -webkit-linear-gradient(130deg, rgba(189,217,89,1) 25%, rgba(160,205,223,1) 65%, rgba(242,242,242,1) 100%);
+    background: linear-gradient(130deg, rgba(189,217,89,1) 25%, rgba(160,205,223,1) 65%, rgba(242,242,242,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bdd959",endColorstr="#f2f2f2",GradientType=1);   
 }
 h1.t{
     color: $p1c1;
