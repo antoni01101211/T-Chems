@@ -172,8 +172,8 @@ section.formulario {
 }
 
 section.carrusel {
-  width: 90%;
-  margin: auto;
+  width: 100%;
+  margin: 0;
 }
 
 section.resumen {
