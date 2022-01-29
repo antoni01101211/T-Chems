@@ -1,7 +1,26 @@
+
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+hr.division{
+    background-color: #0fbfae;
+    width: 100%;
+    height: 15px;
+    margin: 0%;
+}
+hr.division-plata{
+    background-color: gray;
+    width: 100%;
+    height: 5px;
+    margin: 0%;
+}
+hr.division-verde{
+    background-color: #11c020;
+    width: 100%;
+    height: 5px;
+    margin: 0%;
 }
 html{
     font-size: 62.5%;
@@ -20,9 +39,21 @@ body{
     background: linear-gradient(176deg, rgba(242,242,242,1) 0%, rgba(27,145,191,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f2f2f2",endColorstr="#1b91bf",GradientType=1);        
 }
-h1.t{
+@mixin paleta-menu {
+    background-color: $p1c1;
+    color: $p1c2;
+    
+}
+@mixin paleta-subtitltulos {
+    background-color: $p1c3;
     color: $p1c1;
-    background-color: $p1c3 ;
+}
+
+@mixin paleta-texto {
+    
+}
+h1.t{
+    @include paleta-subtitltulos;
     text-align: center;
     margin: 0px;
     padding: 0px;
@@ -36,7 +67,7 @@ h2.subtitle{
 }
 // deG
 .nav{
-    background-color: $p1c1;
+    @include paleta-menu;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -50,7 +81,7 @@ h2.subtitle{
             display: inline-block;
             padding: 10px 50px;
             a{
-                color: $p1c2;
+                @include paleta-menu;
                 text-decoration: none;
             }
             a:hover{
@@ -74,7 +105,7 @@ h2.subtitle{
         margin-bottom: 4px;
     }
 }
-.carousel{
+.carrusel{
     width: 80vw;
     // height: 2rem;
     margin: auto;
