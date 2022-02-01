@@ -52,9 +52,11 @@ h1.t {
 }
 
 h2.subtitle {
-  margin-top: 10px;
-  margin-bottom: 15px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   text-align: center;
+  font-size: 2.6rem;
+  color: #1D3759;
 }
 
 .nav {
@@ -88,7 +90,9 @@ h2.subtitle {
 }
 
 .nav_list_item a:hover {
+  font-size: larger;
   color: #1D3759;
+  background-color: #F2F2F2;
 }
 
 .logo {
@@ -184,16 +188,33 @@ img {
   top: 160px;
 }
 
+.float-fb:hover {
+  background-color: blue;
+}
+
 .float-tw {
   top: 215px;
+}
+
+.float-tw:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#f9ed32), to(#ee2a7b));
+  background: linear-gradient(to right, #f9ed32, #ee2a7b);
 }
 
 .float-gp {
   top: 270px;
 }
 
+.float-gp:hover {
+  background-color: #19ee4e;
+}
+
 .float-rs {
   top: 325px;
+}
+
+.float-rs:hover {
+  background: red;
 }
 
 .float-ig {
@@ -709,5 +730,37 @@ section.sectores-enfocados {
 section.sectores-enfocados div.sector {
   text-align: center;
   border: 1px solid #15BFBF;
+}
+
+.footer-w {
+  background-color: #D8EEED;
+  position: relative;
+  height: 50vh;
+  text-align: center;
+  padding: 200px;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(136% + 1.3px);
+  height: 360px;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.wave__shape {
+  fill: #fff;
 }
 /*# sourceMappingURL=t-tribokem.css.map */

@@ -56,9 +56,11 @@ h1.t{
     opacity: 0.8;
 }
 h2.subtitle{
-    margin-top: 10px;
-    margin-bottom: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     text-align: center;
+    font-size: 2.6rem;
+    color: $p1c1
 }
 // deG
 .nav{
@@ -80,7 +82,9 @@ h2.subtitle{
                 text-decoration: none;
             }
             a:hover{
+                font-size: larger;
                 color: $p1c1;
+                background-color: $p1c2;
             }
         }
     }
@@ -183,17 +187,28 @@ h2.subtitle{
   .float-fb {
     top: 160px;
   }
+  .float-fb:hover{
+    background-color: blue
+  }
   
   .float-tw {
     top: 215px;
+  }
+  .float-tw:hover {
+    background: linear-gradient(to right, #f9ed32, #ee2a7b)
   }
   
   .float-gp {
     top: 270px;
   }
-  
+  .float-gp:hover{
+    background-color: rgb(25, 238, 78);
+  }
   .float-rs {
     top: 325px;
+  }
+  .float-rs:hover {
+    background: red;
   }
   
   .float-ig {
