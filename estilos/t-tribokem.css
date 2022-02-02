@@ -40,13 +40,8 @@ body {
 }
 
 h1.t {
-<<<<<<< HEAD
-  color: #1D3759;
-  background-color: #0FBFAE;
-=======
   background-color: #D9D9D9;
   color: #1D3759;
->>>>>>> main
   text-align: center;
   margin: 0px;
   padding: 0px;
@@ -55,17 +50,16 @@ h1.t {
 }
 
 h2.subtitle {
-  margin-top: 10px;
-  margin-bottom: 15px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   text-align: center;
+  font-size: 2.6rem;
+  color: #1D3759;
 }
 
 .nav {
   background-color: #1D3759;
-<<<<<<< HEAD
-=======
   color: #F2F2F2;
->>>>>>> main
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,17 +82,15 @@ h2.subtitle {
 }
 
 .nav_list_item a {
-<<<<<<< HEAD
-  color: #1B91BF;
-=======
   background-color: #1D3759;
   color: #F2F2F2;
->>>>>>> main
   text-decoration: none;
 }
 
 .nav_list_item a:hover {
+  font-size: larger;
   color: #1D3759;
+  background-color: #F2F2F2;
 }
 
 .logo {
@@ -113,7 +105,7 @@ h2.subtitle {
 .menu_line {
   width: 20px;
   height: 3px;
-  background-color: #1B91BF;
+  background-color: #F2F2F2;
   margin-bottom: 4px;
 }
 
@@ -123,6 +115,115 @@ h2.subtitle {
   padding: 0;
 }
 
+.twitter {
+  font: normal normal 10px Arial;
+  text-align: center;
+  color: #998578;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.twitter {
+  color: #000000;
+  text-decoration: none;
+  display: block;
+  padding: 14px;
+  -webkit-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+.twitter:hover {
+  color: #FF7D6D;
+  text-decoration: none;
+}
+
+span {
+  font-style: italic;
+  display: block;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Floating Social Media Bar Style Starts Here */
+.fl-fl {
+  background: #000000;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 4px;
+  width: 190px;
+  position: fixed;
+  right: -160px;
+  z-index: 1000;
+  font: normal normal 10px Arial;
+  -webkit-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+.fa {
+  font-size: 30px;
+  color: #fff;
+  padding: 10px 0;
+  width: 40px;
+  margin-left: 8px;
+}
+
+.fl-fl:hover {
+  right: 0;
+}
+
+.fl-fl a {
+  color: #fff !important;
+  text-decoration: none;
+  font-size: medium;
+  text-align: center;
+  line-height: 43px !important;
+  vertical-align: top !important;
+}
+
+.float-fb {
+  top: 160px;
+}
+
+.float-fb:hover {
+  background-color: blue;
+}
+
+.float-tw {
+  top: 215px;
+}
+
+.float-tw:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#f9ed32), to(#ee2a7b));
+  background: linear-gradient(to right, #f9ed32, #ee2a7b);
+}
+
+.float-gp {
+  top: 270px;
+}
+
+.float-gp:hover {
+  background-color: #19ee4e;
+}
+
+.float-rs {
+  top: 325px;
+}
+
+.float-rs:hover {
+  background: red;
+}
+
+.float-ig {
+  top: 380px;
+}
+
+.float-pn {
+  top: 435px;
+}
+
+/* Floating Social Media Bar Style Ends Here */
 footer {
   width: 100%;
   height: 40vh;
@@ -200,20 +301,31 @@ footer div.f-item iframe.map {
 }
 
 section.formulario {
-  width: 90%;
+  width: 70%;
   height: 900 px;
   margin: auto;
   margin-top: 100px;
   border: 1px solid;
+  font-size: 1.6rem;
+  font-weight: bolder;
+  padding: 40px;
+}
+
+div.col-5 {
+  margin: auto;
+  margin-right: 0%;
+}
+
+div.col-5 .btn {
+  background-color: #1d3759;
+  color: #f2f2f2;
+  font-size: 1.5rem;
 }
 
 section.carrusel {
   width: 100%;
-<<<<<<< HEAD
   margin: 0;
-=======
   margin: auto;
->>>>>>> main
 }
 
 section.resumen {
@@ -408,7 +520,7 @@ section.principales-clientes div.cliente {
 .marca h2 {
   font-size: 3rem;
   text-align: center;
-  color: #BDD959;
+  color: #9FA1A6;
 }
 
 .marca img {
@@ -617,5 +729,37 @@ section.sectores-enfocados {
 section.sectores-enfocados div.sector {
   text-align: center;
   border: 1px solid #15BFBF;
+}
+
+.footer-w {
+  background-color: #D8EEED;
+  position: relative;
+  height: 50vh;
+  text-align: center;
+  padding: 200px;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(136% + 1.3px);
+  height: 360px;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.wave__shape {
+  fill: #fff;
 }
 /*# sourceMappingURL=t-tribokem.css.map */
