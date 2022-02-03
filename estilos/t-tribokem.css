@@ -671,6 +671,20 @@ img {
   margin-bottom: 1.25rem;
 }
 
+/* principales clientes*/
+div.owl-carousel.owl-theme.owl-loaded.owl-drag {
+  width: 80%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+}
+
+div.owl-nav {
+  width: 75px;
+  margin: auto;
+  font-size: 6rem;
+}
+
 .cuadro-1 {
   display: -ms-grid;
   display: grid;

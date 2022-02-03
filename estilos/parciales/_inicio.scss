@@ -286,3 +286,16 @@ img {
     line-height: 1.5;
     margin-bottom: 1.25rem;
   }
+  /* principales clientes*/
+
+  div.owl-carousel.owl-theme.owl-loaded.owl-drag{
+    width: 80%;
+    margin: auto;
+    display: grid;
+
+  }
+  div.owl-nav{
+    width: 75px;
+    margin: auto;
+    font-size: 6rem;
+  }

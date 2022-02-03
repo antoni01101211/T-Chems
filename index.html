@@ -12,10 +12,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos/t-tribokem.css">
-</head>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- referencias de slick -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+  </head>
 
 <body>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- <h1 class="t">TRIBOKEM</h1> -->
 
   <div>
@@ -276,13 +285,44 @@
 
   <h2 class="subtitle">Principales Clientes</h2>
     <br>
-      <section class="principales-clientes">
-              <div class="cliente">a</div>
-              <div class="cliente">b</div>
-              <div class="cliente">c</div>
-              <div class="cliente">d</div>
-              
-      </section>
+    <!-- principales clientes data -->
+    <div class="owl-carousel owl-theme">
+      <div class="item"><h4><img src="imagenes/clientesPrincipales/01 Afton chemical.jpg" alt=""></h4></div>
+      <div class="item"><h4><img src="imagenes/clientesPrincipales/02 Akron.jpg" alt=""></h4></div>
+      <div class="item"><h4><img src="imagenes/clientesPrincipales/03 Arcelormittal.jpg" alt=""></h4></div>
+      <div class="item"><h4><img src="imagenes/clientesPrincipales/04 Bardahl.png" alt=""></h4></div>
+      <div class="item"><h4><img src="imagenes/clientesPrincipales/05 Exxon mobil.jpg" alt=""></h4></div>
+      <div class="item"><h4><img src="imagenes/clientesPrincipales/06 CFE.png" alt=""></h4></div>
+      <div class="item"><h4><img src="imagenes/clientesPrincipales/07 Optimus lubricantes.jpg" alt=""></h4></div>
+      <div class="item"><h4><img src="imagenes/clientesPrincipales/08 Fuchs.png" alt=""></h4></div>
+      <div class="item"><h4><img src="imagenes/clientesPrincipales/09 IMP.png" alt=""></h4></div>
+      <div class="item"><h4><img src="imagenes/clientesPrincipales/10 Ipn.jpg" alt=""></h4></div>
+      <div class="item"><h4><img src="imagenes/clientesPrincipales/11 PEMEX.jpg" alt=""></h4></div>
+      <div class="item"><h4><img src="imagenes/clientesPrincipales/12 Unam.png" alt=""></h4></div>
+      <div class="item"><h4><img src="imagenes/clientesPrincipales/13 Raloy.jpg" alt=""></h4></div>
+      <div class="item"><h4><img src="imagenes/clientesPrincipales/14 Quaker state.jpg" alt=""></h4></div>
+      <div class="item"><h4><img src="imagenes/clientesPrincipales/15 Total.jpg" alt=""></h4></div>
+  </div>
+  <!-- script del carousel -->
+<script>
+$('.owl-carousel').owlCarousel({
+  
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:5
+        },
+        1000:{
+            items:7
+        }
+    }
+})
+</script>
 
 <br><hr><br>
 
@@ -314,13 +354,16 @@
           <div class="f-item">Catalogos<br><br> Bolsa de trabajo <br><br>Ayuda y Soporte Tecnico</div>
           <div class="f-item"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.9359945621063!2d-99.13660768517819!3d19.501389343530903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f9b826661b17%3A0x720f857e01cc5827!2sESIQIE%20-%20Escuela%20Superior%20de%20Ingenier%C3%ADa%20Qu%C3%ADmica%20e%20Industrias%20Extractivas%20-%20IPN!5e0!3m2!1ses-419!2smx!4v1642540864793!5m2!1ses-419!2smx" class="map" allowfullscreen="" loading="lazy"></iframe></div>
     </footer>
-</body>
-<script>
-  const toggleButton = document.getElementById("toggle-Button");
-  const naviList = document.getElementById("navi-List");
+    <!-- js del carrusel de slick -->
+    <script>
+      const toggleButton = document.getElementById("toggle-Button");
+      const naviList = document.getElementById("navi-List");
+    
+      toggleButton.addEventListener("click", () => {
+       naviList.classList.toggle("active");
+      })
+    </script>
 
-  toggleButton.addEventListener("click", () => {
-   naviList.classList.toggle("active");
-  })
-</script>
+
+</body>
 </html>
