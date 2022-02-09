@@ -15,9 +15,38 @@ section.servicios{
 }
 
 section.productos-destacados{
-    width: 95%;
+    width: 98%;
     margin: auto;
+ 
 }
+// cuadro de servicios 
+section.cuadro-servicios{
+    width: 90%;
+    margin: auto;
+    height: 250px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: 100px 100px;
+    grid-template-areas: "titulo servicio1 servicio2"
+                          "titulo servicio3 servicio4";
+}
+header{
+  grid-area: titulo;
+}
+aside:first-of-type{
+  grid-area: servicio1;
+}
+aside:last-of-type{
+  grid-area: servicio2;
+}
+article:first-of-type{
+  grid-area: servicio3;
+}
+article:last-of-type{
+  grid-area: servicio4;
+}
+// final de lcuadro de servicios
 /* ----------------- cards---------------- */
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
 
@@ -82,9 +111,9 @@ ul.catCardList {
   position: absolute;
   width: 190px;
   bottom: 5px;
-  -webkit-transition: all 0.6s ease;
-  -moz-transition:    all 0.6s ease;
-  -o-transition:      all 0.6s ease;
+  transition: all 0.6s ease;
+  transition:    all 0.6s ease;
+  transition:      all 0.6s ease;
 }
 div.lowerCatCard:hover #catCardButton {
   bottom: 5px;
@@ -289,7 +318,7 @@ img {
   /* principales clientes*/
 
   div.owl-carousel.owl-theme.owl-loaded.owl-drag{
-    width: 80%;
+    width: 95%;
     margin: auto;
     display: grid;
 

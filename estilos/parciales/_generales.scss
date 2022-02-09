@@ -1,283 +1,236 @@
 
 *{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 hr.division{
-    background-color: #0fbfae;
-    width: 100%;
-    height: 15px;
-    margin: 0%;
+  background-color: #0fbfae;
+  width: 100%;
+  height: 15px;
+  margin: 0%;
 }
-hr.division-plata{
-    background-color: gray;
-    width: 100%;
-    height: 5px;
-    margin: 0%;
-}
-hr.division-verde{
-    background-color: #11c020;
-    width: 100%;
-    height: 5px;
-    margin: 0%;
-}
+
 html{
-    font-size: 62.5%;
-    font-family: 'lato',sans-serif;
+  font-size: 62.5%;
+  font-family: 'lato',sans-serif;
 }
 body{
-    // background-color: $p1c2;
-    background: rgb(242,242,242);
-    background: -moz-linear-gradient(180deg, rgba(242,242,242,1) 0%, rgba(159,161,166,0.6166666495699842) 100%);
-    background: -webkit-linear-gradient(180deg, rgba(242,242,242,1) 0%, rgba(159,161,166,0.6166666495699842) 100%);
-    background: linear-gradient(180deg, rgba(242,242,242,1) 0%, rgba(159,161,166,0.6166666495699842) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f2f2f2",endColorstr="#9fa1a6",GradientType=1);    
+  // background-color: $p1c2;
+  background: rgb(242,242,242);
+  background: -moz-linear-gradient(180deg, rgba(242,242,242,1) 0%, rgba(159,161,166,0.6166666495699842) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(242,242,242,1) 0%, rgba(159,161,166,0.6166666495699842) 100%);
+  background: linear-gradient(180deg, rgba(242,242,242,1) 0%, rgba(159,161,166,0.6166666495699842) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f2f2f2",endColorstr="#9fa1a6",GradientType=1);    
 }
 @mixin paleta-menu {
-    background-color: $p1c1;
-    color: $p1c2;
-    
+  background-color: $p1c1;
+  color: $p1c2;
+  
 }
 @mixin paleta-subtitltulos {
-    background-color: $p1c3;
-    color: $p1c1;
+  background-color: $p1c3;
+  color: $p1c1;
 }
 
 @mixin paleta-texto {
-    
+  
 }
 h1.t{
-    @include paleta-subtitltulos;
-    text-align: center;
-    margin: 0px;
-    padding: 0px;
-    font-size: 70px;
-    opacity: 0.8;
+  @include paleta-subtitltulos;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  font-size: 70px;
+  opacity: 0.8;
 }
 h2.subtitle{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    text-align: center;
-    font-size: 2.6rem;
-    color: $p1c1
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 2.6rem;
+  color: $p1c1
 }
 // deG
 .nav{
-    @include paleta-menu;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 1.6rem;
-    font-family: "lato",sans-serif;
+  @include paleta-menu;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.6rem;
+  font-family: "lato",sans-serif;
 
-    &_list{
-        list-style-type: none;
-        
-        &_item{
-            display: inline-block;
-            padding: 10px 50px;
-            a{
-                @include paleta-menu;
-                text-decoration: none;
-            }
-            a:hover{
-                font-size: larger;
-                color: $p1c1;
-                background-color: $p1c2;
-            }
-        }
-    }
+  &_list{
+      list-style-type: none;
+      
+      &_item{
+          display: inline-block;
+          padding: 10px 50px;
+          a{
+              @include paleta-menu;
+              text-decoration: none;
+          }
+          a:hover{
+             text-decoration: underline;
+          }
+      }
+  }
 
 }
 .logo{
-    height: 12vh;
-    padding: 5px 5px;
+  height: 12vh;
+  padding: 5px 5px;
 }
 .menu{
-    display: none;
+  display: none;
 
-    &_line{
-        width: 20px;
-        height: 3px;
-        background-color: $p1c2;
-        margin-bottom: 4px;
-    }
+  &_line{
+      width: 20px;
+      height: 3px;
+      background-color: $p1c2;
+      margin-bottom: 4px;
+  }
 }
 .carrusel{
-    width: 80vw;
-    // height: 2rem;
-    margin: auto;
-    padding: 0;
+  width: 80vw;
+  // height: 2rem;
+  margin: auto;
+  padding: 0;
 }
 
 .twitter {
-    font: normal normal 10px Arial;
-    text-align: center;
-    color: #998578;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-  }
-  
-  .twitter {
-    color: #000000;
-    text-decoration: none;
-    display: block;
-    padding: 14px;
-    -webkit-transition: all .25s ease;
-    -moz-transition: all .25s ease;
-    -ms-transition: all .25s ease;
-    -o-transition: all .25s ease;
-    transition: all .25s ease;
-  }
-  
-  .twitter:hover {
-    color: #FF7D6D;
-    text-decoration: none;
-  }
-  
-  span {
-    font-style: italic;
-    display: block;
-  }
-  
-  img {
-    max-width: 100%;
-  }
-  /* Floating Social Media Bar Style Starts Here */
-  
-  .fl-fl {
-    background: #000000;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    padding: 4px;
-    width: 190px;
-    position: fixed;
-    right: -160px;
-    z-index: 1000;
-    font: normal normal 10px Arial;
-    -webkit-transition: all .25s ease;
-    -moz-transition: all .25s ease;
-    -ms-transition: all .25s ease;
-    -o-transition: all .25s ease;
-    transition: all .25s ease;
-  }
-  
-  .fa {
-    font-size: 30px;
-    color: #fff;
-    padding: 10px 0;
-    width: 40px;
-    margin-left: 8px;
-  }
-  
-  .fl-fl:hover {
-    right: 0;
-  }
-  
-  .fl-fl a {
-    color: #fff !important;
-    text-decoration: none;
-    font-size: medium;
-    text-align: center;
-    line-height: 43px!important;
-    vertical-align: top!important;
-  }
-  
-  .float-fb {
-    top: 160px;
-  }
-  .float-fb:hover{
-    background-color: blue
-  }
-  
-  .float-tw {
-    top: 215px;
-  }
-  .float-tw:hover {
-    background: linear-gradient(to right, #f9ed32, #ee2a7b)
-  }
-  
-  .float-gp {
-    top: 270px;
-  }
-  .float-gp:hover{
-    background-color: rgb(25, 238, 78);
-  }
-  .float-rs {
-    top: 325px;
-  }
-  .float-rs:hover {
-    background: red;
-  }
-  
-  .float-ig {
-    top: 380px;
-  }
-  
-  .float-pn {
-    top: 435px;
-  }
-  /* Floating Social Media Bar Style Ends Here */
+  font: normal normal 10px Arial;
+  text-align: center;
+  color: #998578;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.twitter {
+  color: #000000;
+  text-decoration: none;
+  display: block;
+  padding: 14px;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+.twitter:hover {
+  color: #FF7D6D;
+  text-decoration: none;
+}
+
+span {
+  font-style: italic;
+  display: block;
+}
+
+img {
+  max-width: 100%;
+}
+/* Floating Social Media Bar Style Starts Here */
+
+.fl-fl {
+  background: #000000;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 4px;
+  width: 190px;
+  position: fixed;
+  right: -160px;
+  z-index: 1000;
+  font: normal normal 10px Arial;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+.fa {
+  font-size: 30px;
+  color: #fff;
+  padding: 10px 0;
+  width: 40px;
+  margin-left: 8px;
+}
+
+.fl-fl:hover {
+  right: 0;
+}
+
+.fl-fl a {
+  color: #fff !important;
+  text-decoration: none;
+  font-size: medium;
+  text-align: center;
+  line-height: 43px!important;
+  vertical-align: top!important;
+}
+
+.float-fb {
+  top: 160px;
+}
+.float-fb:hover{
+  background-color: blue
+}
+
+.float-tw {
+  top: 215px;
+}
+.float-tw:hover {
+  background: linear-gradient(to right, #f9ed32, #ee2a7b)
+}
+
+.float-gp {
+  top: 270px;
+}
+.float-gp:hover{
+  background-color: rgb(25, 238, 78);
+}
+.float-rs {
+  top: 325px;
+}
+.float-rs:hover {
+  background: red;
+}
+
+.float-ig {
+  top: 380px;
+}
+
+.float-pn {
+  top: 435px;
+}
+/* Floating Social Media Bar Style Ends Here */
 
 
 
 footer{
-    width: 100%;
-    height: 40vh;
-    border: 1px solid;
-    background-color: $p1c1;
-    color: #f2f2f2;
-    display:grid;
-    grid-template-columns: 20% 20% 20% 25%;
-    grid-template-rows: 250px;
-    gap: 5px;
-    align-content: center;
-    justify-content: center;
-    div.f-item{
-        /*border: 1px solid red ;*/
-        align-self:center;
-        div.fitem:nth-child(4){
-            align-self: start;
-            height: 240;
-        }
-        iframe.map{
-            width: 100%;
-            height: 240px; 
-        }
-    }
-}
-
-@media all and (max-width: 480px){
-    .nav{
-        flex-direction: column;
-        position: relative;
-        ul{
-            padding-left: 0;
-        }
-    }
-    .nav_logo{
-        width: 100%;
-    }
-    .menu{
-        display: block;
-        position: absolute;
-        right: 15px;
-        top: 15px;
-    }
-    .nav_list_item {
-        display: block;
-        padding: 10px 10px;
-        border-top: 1px solid white;
-    }
-    .nav_list {
-        list-style-type: none;
-        width: 100%;
-        text-align: center;
-        padding-top: 10px;
-        display: none;
-    }
-    .active{
-        display: block;
-    }
+  width: 100%;
+  height: 40vh;
+  border: 1px solid;
+  background-color: $p1c1;
+  color: #f2f2f2;
+  display:grid;
+  grid-template-columns: 20% 20% 20% 25%;
+  grid-template-rows: 250px;
+  gap: 5px;
+  align-content: center;
+  justify-content: center;
+  div.f-item{
+      /*border: 1px solid red ;*/
+      align-self:center;
+      div.fitem:nth-child(4){
+          align-self: start;
+          height: 240;
+      }
+      iframe.map{
+          width: 100%;
+          height: 240px; 
+      }
+  }
 }
