@@ -155,7 +155,7 @@ img {
   color: #fff;
   padding: 10px 0;
   width: 40px;
-  margin-left: 8px;
+  margin-left: -5px;
 }
 
 .fl-fl:hover {
@@ -175,14 +175,16 @@ img {
   top: 160px;
 }
 .float-fb:hover{
-  background-color: blue
+  background-color: blue;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .float-tw {
   top: 215px;
 }
 .float-tw:hover {
-  background: linear-gradient(to right, #f9ed32, #ee2a7b)
+  background: linear-gradient(to right, #f9ed32, #ee2a7b);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .float-gp {
@@ -190,6 +192,8 @@ img {
 }
 .float-gp:hover{
   background-color: rgb(25, 238, 78);
+  font-family: Arial, Helvetica, sans-serif;
+
 }
 .float-rs {
   top: 325px;
