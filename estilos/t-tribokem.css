@@ -56,7 +56,7 @@ h2.subtitle {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-family: "lato",sans-serif;
 }
 
@@ -231,6 +231,7 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-size: 1.7rem;
 }
 
 footer div.f-item {
@@ -277,6 +278,13 @@ div.col-5 .btn {
 section.carrusel {
   width: 100%;
   margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+section.carrusel button.carousel-control-next {
+  margin-top: 200px;
+  height: 150px;
 }
 
 section.descripcion {
@@ -314,6 +322,7 @@ section.cuadro-servicios {
   width: 90%;
   margin: auto;
   margin-top: 150px;
+  margin-bottom: 150px;
   height: 650px;
   display: -ms-grid;
   display: grid;

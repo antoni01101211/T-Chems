@@ -1,7 +1,14 @@
 section.carrusel{
     width: 100%;
     margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    button.carousel-control-next{
+      margin-top: 200px;
+    height: 150px;
+    }
 }
+
 
 section.descripcion{
     width: 90%;
@@ -35,6 +42,7 @@ section.cuadro-servicios{
     width: 90%;
     margin: auto;
     margin-top: 150px;
+    margin-bottom: 150px;
     height: 650px;
     display: grid;
     grid-template-columns: 30% 30% 30%;
