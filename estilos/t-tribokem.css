@@ -96,7 +96,7 @@ h2.subtitle {
 }
 
 .carrusel {
-  width: 80vw;
+  width: 100vw;
   margin: auto;
   padding: 0;
 }
@@ -276,15 +276,12 @@ div.col-5 .btn {
 }
 
 section.carrusel {
-  width: 100%;
-  margin: auto;
-  margin-top: 50px;
+  height: 80vp;
   margin-bottom: 50px;
 }
 
 section.carrusel button.carousel-control-next {
   margin-top: 200px;
-  height: 150px;
 }
 
 section.descripcion {
