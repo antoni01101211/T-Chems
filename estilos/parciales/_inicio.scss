@@ -39,22 +39,54 @@ section.productos-destacados{
  
 }
 // cuadro de servicios -----------------------------
-section.cuadro-servicios{
-    width: 90%;
-    margin: auto;
-    margin-top: 150px;
-    margin-bottom: 150px;
-    height: 650px;
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 300px 300px;
-    gap: 25px;
-    grid-template-areas: "titulo servicio1 servicio2"
-                          "titulo servicio3 servicio4";
+.cuadroServicios{
+  padding: 2%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(25%, 1fr));
+  // grid-template-rows: repeat(2,minmax(25%,1fr));
+  &__container{
+    position: relative;
+    width: 100%;
+    // height: 50%;
+  }
+  &__image{
+    // display: block;
+    width: 100%;
+    height: 50%;
+  }
+  &__overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #B8D9D9;
+  }
+  &__text{
+    color: white;
+    font-size: 5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+.cuadroServicios__container:hover{
+  opacity: 1;
+}
+.cuadroServicios__overlay:hover{
+  opacity: 1;
 }
 header{
   grid-area: titulo;
-  font-size: 5rem;
+  font-size: 3rem;
   justify-self: center;
   align-self: center;
   color: #1D3759;
@@ -265,7 +297,7 @@ section.principales-clientes{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
+    width: 40%;
 }
 // para marca representada
 .marca{

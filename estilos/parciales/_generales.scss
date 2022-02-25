@@ -46,10 +46,14 @@ h1.t{
 }
 h2.subtitle{
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.2rem;
   text-align: center;
-  font-size: 2.6rem;
+  font-size: 5rem;
   color: $p1c1
+}
+p.subtitle{
+  font-size: 2.5rem;
+
 }
 // deG
 .nav{
@@ -57,7 +61,7 @@ h2.subtitle{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-size: 1.8rem;
+  font-size: 3rem;
   font-family: "lato",sans-serif;
 
   &_list{
@@ -225,7 +229,7 @@ footer{
   gap: 5px;
   align-content: center;
   justify-content: center;
-  font-size: 1.7rem;
+  font-size: 2.5rem;
   div.f-item{
       /*border: 1px solid red ;*/
       align-self:center;

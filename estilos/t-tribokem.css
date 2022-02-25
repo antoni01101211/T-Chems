@@ -39,10 +39,14 @@ h1.t {
 
 h2.subtitle {
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.2rem;
   text-align: center;
-  font-size: 2.6rem;
+  font-size: 5rem;
   color: #1D3759;
+}
+
+p.subtitle {
+  font-size: 2.5rem;
 }
 
 .nav {
@@ -56,7 +60,7 @@ h2.subtitle {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.8rem;
+  font-size: 3rem;
   font-family: "lato",sans-serif;
 }
 
@@ -231,7 +235,7 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 1.7rem;
+  font-size: 2.5rem;
 }
 
 footer div.f-item {
@@ -298,7 +302,7 @@ section.descripcion p {
 section.marca {
   width: 90%;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 3rem;
 }
 
 section.marca h2 {
@@ -316,28 +320,60 @@ section.productos-destacados {
   margin: auto;
 }
 
-section.cuadro-servicios {
-  width: 90%;
-  margin: auto;
-  margin-top: 150px;
-  margin-bottom: 150px;
-  height: 650px;
+.cuadroServicios {
+  padding: 2%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 30% 30% 30%;
-      grid-template-columns: 30% 30% 30%;
-  -ms-grid-rows: 300px 300px;
-      grid-template-rows: 300px 300px;
-  gap: 25px;
-      grid-template-areas: "titulo servicio1 servicio2" "titulo servicio3 servicio4";
+  -ms-grid-columns: (minmax(25%, 1fr))[4];
+      grid-template-columns: repeat(4, minmax(25%, 1fr));
+}
+
+.cuadroServicios__container {
+  position: relative;
+  width: 100%;
+}
+
+.cuadroServicios__image {
+  width: 100%;
+  height: 50%;
+}
+
+.cuadroServicios__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  background-color: #B8D9D9;
+}
+
+.cuadroServicios__text {
+  color: white;
+  font-size: 5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.cuadroServicios__container:hover {
+  opacity: 1;
+}
+
+.cuadroServicios__overlay:hover {
+  opacity: 1;
 }
 
 header {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
   grid-area: titulo;
-  font-size: 5rem;
+  font-size: 3rem;
   -ms-grid-column-align: center;
       justify-self: center;
   -ms-flex-item-align: center;
@@ -348,8 +384,6 @@ header {
 
 aside:first-of-type {
   margin-top: 25px;
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: servicio1;
 }
 
@@ -371,8 +405,6 @@ aside:first-of-type img:hover {
 
 aside:last-of-type {
   margin-top: 25px;
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
   grid-area: servicio2;
 }
 
@@ -393,8 +425,6 @@ aside:last-of-type img:hover {
 }
 
 article:first-of-type {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
   grid-area: servicio3;
 }
 
@@ -415,8 +445,6 @@ article:first-of-type img:hover {
 }
 
 article:last-of-type {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
   grid-area: servicio4;
 }
 
@@ -607,7 +635,7 @@ section.principales-clientes div.cliente {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 30%;
+  width: 40%;
 }
 
 .marca h2 {
