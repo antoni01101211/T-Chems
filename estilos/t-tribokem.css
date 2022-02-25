@@ -39,8 +39,8 @@ h1.t {
 }
 
 h2.subtitle {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   text-align: center;
   font-size: 2.6rem;
   color: #1D3759;
@@ -97,7 +97,7 @@ h2.subtitle {
 }
 
 .carrusel {
-  width: 80vw;
+  width: 100vw;
   margin: auto;
   padding: 0;
 }
@@ -280,6 +280,7 @@ section.carrusel {
   width: 90%;
   margin: auto;
   margin-top: 50px;
+  height: 80vp;
   margin-bottom: 50px;
 }
 
@@ -293,6 +294,7 @@ section.carrusel button.carousel-control-prev {
   margin-top: 800px;
   height: 150px;
   opacity: 1;
+  margin-top: 200px;
 }
 
 section.descripcion {
@@ -303,6 +305,7 @@ section.descripcion {
 
 section.descripcion p {
   font-size: 2rem;
+  text-align: justify;
 }
 
 section.marca {
@@ -339,7 +342,8 @@ section.cuadro-servicios {
   -ms-grid-rows: 300px 300px;
       grid-template-rows: 300px 300px;
   gap: 25px;
-      grid-template-areas: "titulo servicio1 servicio2" "titulo servicio3 servicio4";
+      grid-template-areas: "titulo servicio1 servicio2"
+ "titulo servicio3 servicio4";
 }
 
 header {

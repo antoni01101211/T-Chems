@@ -12,6 +12,13 @@ section.carrusel{
       margin-top: 800px;
       height: 150px;
       opacity: 1;
+    // width: 100%;
+    height: 80vp;
+    // margin-top: 5px;
+    margin-bottom: 50px;
+    button.carousel-control-next{
+      margin-top: 200px;
+    
     }
 }
 
@@ -22,12 +29,13 @@ section.descripcion{
     height: 200px;
     p{
       font-size: 2rem;
+      text-align: justify;
     }
 }
 section.marca{
   width: 90%;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 3rem;
   h2{
     color: #1D3759;
     font-size: 2.6rem;
@@ -303,5 +311,3 @@ section.principales-clientes{
     margin: auto;
     font-size: 6rem;
   }
-
-  
