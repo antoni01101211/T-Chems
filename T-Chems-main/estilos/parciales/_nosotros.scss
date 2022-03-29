@@ -1,0 +1,43 @@
+.cuadro-1{
+    display: grid;
+    width: 90%;
+    margin: auto;
+    border: 1px solid ;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 150px;
+    gap: 10px;
+    div.info-nosotros{
+        border: 1px solid #15BFBF;
+    }
+    div.imagen-nosotros{
+        border: 1px solid greenyellow;
+    }
+}
+section.codigo-etica{
+    display: grid;
+    width: 90%;
+    margin: auto;
+    border: 1px solid ;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 150px;
+    gap: 10px;
+    align-content: center;
+    div.valor{
+        text-align: center;
+        border: 1px solid salmon;
+    }
+}
+section.sectores-enfocados{
+    display: grid;
+    width: 90%;
+    margin: auto;
+    border: 1px solid ;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 150px;
+    gap: 10px;
+    align-content: center;
+    div.sector{
+            text-align: center;
+            border: 1px solid #15BFBF;
+    }
+}
