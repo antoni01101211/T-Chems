@@ -349,7 +349,7 @@ section.productos-destacados {
   opacity: 0;
   -webkit-transition: .5s ease;
   transition: .5s ease;
-  background-color: #B8D9D9;
+  background-color: #1f3e79;
 }
 
 .cuadroServicios__text {
@@ -677,18 +677,19 @@ div.owl-nav {
 .cuadro-1 {
   display: -ms-grid;
   display: grid;
-  width: 90%;
+  width: 80%;
   margin: auto;
-  border: 1px solid;
+  margin-top: 50px;
+  margin-bottom: 50px;
   -ms-grid-columns: 2fr 1fr;
       grid-template-columns: 2fr 1fr;
-  -ms-grid-rows: 150px;
-      grid-template-rows: 150px;
-  gap: 10px;
+  -ms-grid-rows: 250px;
+      grid-template-rows: 250px;
+  gap: 30px;
 }
 
 .cuadro-1 div.info-nosotros {
-  border: 1px solid #15BFBF;
+  font-size: 1.7rem;
 }
 
 .cuadro-1 div.imagen-nosotros {
@@ -700,19 +701,25 @@ section.codigo-etica {
   display: grid;
   width: 90%;
   margin: auto;
-  border: 1px solid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
-  -ms-grid-rows: 150px;
-      grid-template-rows: 150px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  -ms-grid-columns: (20%)[5];
+      grid-template-columns: repeat(5, 20%);
+  -ms-grid-rows: 200px;
+      grid-template-rows: 200px;
   gap: 10px;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
 }
 
 section.codigo-etica div.valor {
   text-align: center;
-  border: 1px solid salmon;
+}
+
+section.codigo-etica div.valor img {
+  width: 90%;
+  height: 100%;
 }
 
 section.sectores-enfocados {
@@ -720,11 +727,12 @@ section.sectores-enfocados {
   display: grid;
   width: 90%;
   margin: auto;
-  border: 1px solid;
+  margin-top: 50px;
+  margin-bottom: 50px;
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
-  -ms-grid-rows: 150px;
-      grid-template-rows: 150px;
+  -ms-grid-rows: 200px;
+      grid-template-rows: 200px;
   gap: 10px;
   -ms-flex-line-pack: center;
       align-content: center;
@@ -732,7 +740,11 @@ section.sectores-enfocados {
 
 section.sectores-enfocados div.sector {
   text-align: center;
-  border: 1px solid #15BFBF;
+}
+
+section.sectores-enfocados div.sector img {
+  width: 90%;
+  height: 99%;
 }
 
 .footer-w {

@@ -64,7 +64,7 @@ section.productos-destacados{
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #B8D9D9;
+    background-color: #1f3e79;
   }
   &__text{
     color: white;
@@ -289,7 +289,7 @@ section.principales-clientes{
     grid-template-rows: 100px;
     gap: 4px;
     div.cliente{
-        border: 1px solid#15BFBF;
+        border: 1px solid #15BFBF;
         text-align: center;
     }
 }
