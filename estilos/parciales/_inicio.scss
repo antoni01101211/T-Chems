@@ -40,9 +40,28 @@ section.productos-destacados{
 }
 // cuadro de servicios -----------------------------
 .cuadroServicios{
-  padding: 2%;
   display: grid;
-  grid-template-columns: repeat(4, minmax(25%, 1fr));
+  grid-template-rows: repeat(2,250px);
+  grid-auto-rows: auto;
+  grid-gap: 2.9rem;
+  padding: 1rem;
+  max-width: 70%;
+  margin:auto;
+  margin-top: 100px;
+  margin-bottom: 150px;
+  grid-template-columns: repeat(2, 48%);
+
+  font-family: var(--font-sans);
+  @media (min-width: 600px) {
+    .cuadroServicios {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (min-width: 800px) {
+    .cuadroServicios {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
   // grid-template-rows: repeat(2,minmax(25%,1fr));
   &__container{
     position: relative;
@@ -52,7 +71,7 @@ section.productos-destacados{
   &__image{
     // display: block;
     width: 100%;
-    height: 50%;
+    height: 100%;
   }
   &__overlay{
     position: absolute;
@@ -60,18 +79,20 @@ section.productos-destacados{
     bottom: 0;
     left: 0;
     right: 0;
-    height: 50%;
+    height: 100%;
     width: 100%;
     opacity: 0;
     transition: .5s ease;
     background-color: #1f3e79;
   }
+
   &__text{
     color: white;
     font-size: 5rem;
     position: absolute;
     top: 50%;
     left: 50%;
+    text-decoration: none;
     text-align: center;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -80,6 +101,8 @@ section.productos-destacados{
 }
 .cuadroServicios__container:hover{
   opacity: 1;
+  cursor: pointer;
+
 }
 .cuadroServicios__overlay:hover{
   opacity: 1;
