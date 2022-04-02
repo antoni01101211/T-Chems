@@ -6,13 +6,12 @@ const btnReset = document.querySelector('#btnreset')
 // variable de validacion email de forma global usando una expresion regular
 const er = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 // variables para campos 
-const idplay = document.querySelector('#id-play');
+const empresa = document.querySelector('#empresa');
 const nombre = document.querySelector('#nombre');
-const edad = document.querySelector('#edades');
+const telefono = document.querySelector('#telefono');
 const email = document.querySelector('#email');
-const numero= document.querySelector('#numero');
-const zona = document.querySelector('#zona');
-const boss = document.querySelector('#boss');
+const direccion = document.querySelector('#direccion');
+const industria = document.querySelector('#industria');
 const comentario = document.querySelector('#comentario');
 
 
@@ -21,13 +20,12 @@ function eventListeners (){
     // cuando la app arranca
     document.addEventListener('DOMContentLoaded', iniciarApp);
     // Campos del Formulario para validar
-    idplay.addEventListener('blur',validarFormulario);
+    empresa.addEventListener('blur',validarFormulario);
     nombre.addEventListener('blur',validarFormulario);
-    edad.addEventListener('blur',validarFormulario);
+    telefono.addEventListener('blur',validarFormulario);
     email.addEventListener('blur',validarFormulario);
-    numero.addEventListener('blur',validarFormulario);
-    zona.addEventListener('blur',validarFormulario);
-    boss.addEventListener('blur',validarFormulario);
+    direccion.addEventListener('blur',validarFormulario);
+    industria.addEventListener('blur',validarFormulario);
     comentario.addEventListener('blur',validarFormulario);
     //reinicio formulario
     btnReset.addEventListener('click', resetearFormulario);
@@ -40,13 +38,13 @@ function eventListeners (){
 function iniciarApp(){
 botonEnviar.disabled = true;
 botonEnviar.style.opacity = '0.5' 
+e.target.style.border = 'none';
 }
 
 
 // validar formulario
 function validarFormulario(e){
 
-    e.target.style.border.remove = '2.5px solid red';
     e.target.style.border = '2.5px solid green';
 // aqui se uso un metodo de filtrado y busqueda
     if(e.target.value.length > 0){
@@ -80,7 +78,7 @@ function validarFormulario(e){
 
         }
     }
-    if(er.test(email.value) && (idplay.value != '') && (nombre.value != '') && (edad.value != '') && (numero.value != '') && (zona.value != '') && (boss.value != '') && (comentario.value != '') ){
+    if(er.test(email.value) && (empresa.value != '') && (nombre.value != '') && (telefono.value != '') && (direccion.value != '') && (industria.value != '') && (comentario.value != '') ){
         botonEnviar.disabled = false;
         botonEnviar.style.opacity = '1'
     }
@@ -126,8 +124,8 @@ function enviarEmail(e){
     parrafo.textContent = 'Mensaje enviado';
     parrafo.style.width = '500px';
     parrafo.style.height = '10 px';
-    parrafo.style.border = '3px solid green';
-    parrafo.style.color = 'green';
+    parrafo.style.border = '3px solid #1d3759';
+    parrafo.style.color = '#1d3759';
     parrafo.style.padding = '3px';
     parrafo.style.margin = 'auto';
     parrafo.style.textAlign = 'center';
@@ -145,12 +143,12 @@ function enviarEmail(e){
 
 function resetearFormulario(){
     email.value =''
-    idplay.value = '' 
+    empresa.value = '' 
     nombre.value = ''
-    edad.value = '' 
-    numero.value = '' 
-    zona.value = ''
-    boss.value = ''
+    telefono.value = '' 
+    direccion.value = '' 
+    industria.value = ''
     comentario.value = ''
+    e.target.style.border = 'none';
 
  }

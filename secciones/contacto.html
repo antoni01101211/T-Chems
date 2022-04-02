@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tribokem</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <script src="../js/bootstrap.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
@@ -30,55 +29,78 @@
       <hr class="division">
     </div>
     <br>
-    <hr>
     <h2 class="subtitle">Completa el formulario y un asesor te contactara personalmente</h2>
-    <hr>
-    <section class="formulario">
-        <form action="https://formsubmit.co/anton_harley@hotmail.com" class="row g-5" method="post">
-            <div class="col-3">
-                <label for="inputAddress" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="nombre">
-            </div>
-            <div class="col-5">
-                <label for="empresa" class="form-label">Empresa</label>
-                <input type="text" class="form-control" id="empresa">
-              </div>
-            <div class="col-md-4">
-              <label for="inputEmail" class="form-label">E-mail</label>
-              <input type="email" class="form-control" id="email">
-            </div>
-            <div class="col-md-3">
-              <label for="number" class="form-label">Telefono</label>
-              <input type="text" class="form-control" id="number">
-            </div>
-            
-            <div class="col-md-8">
-              <label for="adress" class="form-label">Direccion</label>
-              <input type="text" class="form-control" id="direccion">
-            </div>
-            <div class="col-md-5">
-              <label for="inputState" class="form-label">Industria</label>
-              <select id="industria" class="form-select">
-                <option selected>Choose...</option>
-                <option>Quimica</option>
-                <option>Alimenticia</option>
-                <option>Automotriz</option>
-                <option>Plasticos</option>
-                <option>Lubricantes</option>
-                <option>Pinturas</option>
+   <!-- Formulario 1 -->
+   <section id="formulario1" class="formulario1">
+    <form action="https://formsubmit.co/antonio_1pv1@hotmail.com" class="row g-8" method="post">
+     <!-- Nombre -->
+     <div class="col-4">
+      <label for="name" class="form-label" >Nombre</label>
+      <input type="text" class="form-control" id="nombre"placeholder="Escribe tu nombre...">
+     </div><br><br>
+      <!-- empresa -->
+      <div class="col-4">
+        <label for="empresa" class="form-label">Empresa</label>
+        <input type="text" class="form-control" id="empresa" placeholder="Empresa...">
+      </div><br><br>
+        
+          <!-- telefono -->
+          <div class="col-4">
+            <label for="telefono" class="form-label">Telefono</label>
+            <input class="form-control" type="text" id="telefono" name="telefono"placeholder="Telefono" />
+           </div><br><br>
+        <!-- Mail  -->
+        <div class="col-4">
+          <label for="inputEmail" class="form-label">E-mail</label>
+          <input type="email" class="form-control" id="email" placeholder="Mail">
+        </div>
+        <!-- direccion -->
+        <div class="col-md-6">
+          <label for="direccion" class="form-label">Direccion</label>
+          <input type="text" class="form-control" id="direccion" placeholder="Direccion">
+        </div>
+        
+        <!--  -->
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">Industria</label>
+          <select id="industria" class="form-select">
+            <option selected>Elija una opcion...</option>
+            <option>Petrolero</option>
+            <option>Automotriz</option>
+            <option>Aceites y Lubricantes</option>
+            <option>Alimenticia </option>
+            <option>Ambiental</option>
+            <option>Otra...</option>
+          </select>
+        </div>
 
-              </select>
-            </div>
-            <div class="col-lg-5">
-              <label for="comentario" class="form-label">Mensaje</label>
-              <input type="text" class="form-control" id="comentario">
-            </div>
-              <br>
-            <div class="btn-enviar1">
-              <button type="submit" class="btn2" id="btn-enviar">Enviar</button>
-            </div>
+        
+        <!-- Cuadro de Texto -->
 
-          </form>
+        <div class="col-md-12">
+          <label for="comentario" class="form-label">Mensaje</label>
+          <input class="comentario form-control" name="texto" id='comentario' type="text" placeholder="Escrba aqui ...">
+        </div>
+        <br>
+        
+        <!-- Boton Enviar -->
+        <br><br><br>
+        <div class="col-1">
+          <button id="enviar" type="submit" id="btn" class="btn2">Enviar</button>
+        </div>
+        <div class="col-1">
+          <button id="btnreset" type="reset" id="btn" class="btn3">Reset</button>
+        </div>
+        
+        <div  id="spinner">
+          <div class="sk-folding-cube">
+            <div class="sk-cube1 sk-cube"></div>
+            <div class="sk-cube2 sk-cube"></div>
+            <div class="sk-cube4 sk-cube"></div>
+            <div class="sk-cube3 sk-cube"></div>
+          </div>
+      </div>
+      </form>
 
 
     </section>
@@ -98,5 +120,6 @@
         <div class="f-item">Catalogos<br><br> Bolsa de trabajo <br><br>Ayuda y Soporte Tecnico</div>
         <div class="f-item"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.9359945621063!2d-99.13660768517819!3d19.501389343530903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f9b826661b17%3A0x720f857e01cc5827!2sESIQIE%20-%20Escuela%20Superior%20de%20Ingenier%C3%ADa%20Qu%C3%ADmica%20e%20Industrias%20Extractivas%20-%20IPN!5e0!3m2!1ses-419!2smx!4v1642540864793!5m2!1ses-419!2smx" class="map" allowfullscreen="" loading="lazy"></iframe></div>
     </footer>
+    <script src="../funciones js/contacto.js"></script>
 </body>
 </html>
