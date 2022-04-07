@@ -38,7 +38,6 @@ function eventListeners (){
 function iniciarApp(){
 botonEnviar.disabled = true;
 botonEnviar.style.opacity = '0.5' 
-e.target.style.border = 'none';
 }
 
 
@@ -132,9 +131,10 @@ function enviarEmail(e){
     // insertamos parrafo antes del spinner
     formulario.appendChild(parrafo);
     setTimeout(()=>{
-        parrafo.remove();// quita el mensaje de enviado despues de un tiempo
+        // parrafo.remove();// quita el mensaje de enviado despues de un tiempo
         
-        resetearFormulario();//llama a la funcion
+        // resetearFormulario();//llama a la funcion
+        location.href = location.href //comando para recargar la pagina
         iniciarApp();
     },3000);
     },3000); 
@@ -149,6 +149,5 @@ function resetearFormulario(){
     direccion.value = '' 
     industria.value = ''
     comentario.value = ''
-    e.target.style.border = 'none';
 
  }

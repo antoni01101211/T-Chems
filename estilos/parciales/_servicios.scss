@@ -118,23 +118,18 @@ div.servicio-descripcion{
 
 
 .title {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   font-weight: bold;
-  line-height: 1.2;
+  line-height: 1.6;
 }
 
 .copy {
   font-family: var(--font-serif);
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   font-style: italic;
   line-height: 1.35;
 }
 
-
-.btn:focus {
-  outline: 1px solid #0fbfae;
-  outline-offset: 3px;
-}
 // boton cotizar estilos
 div.btn-cotizar{
     width: 10%;

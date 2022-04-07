@@ -6,6 +6,7 @@
 }
 hr.division{
   background-color: #0fbfae;
+  opacity: 1;
   width: 100%;
   height: 15px;
   margin: 0%;
@@ -46,9 +47,9 @@ h1.t{
   opacity: 0.8;
 }
 h2.subtitle{
-  margin: autoqa  2;
+  margin: auto;
   margin-top: 2rem;
-  max-width: 90%; 
+  width: 90%; 
   margin-bottom: 2.2rem;
   text-align: center;
   font-size: 5rem;
@@ -59,31 +60,96 @@ p.subtitle{
 
 }
 // deG
-.nav{
-  @include paleta-menu;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 3rem;
-  font-family: "lato",sans-serif;
+// .nav{
+//   @include paleta-menu;
+//   display: flex;
+//   justify-content: space-around;
+//   align-items: center;
+//   font-size: 3rem;
+//   font-family: "lato",sans-serif;
 
-  &_list{
-      list-style-type: none;
+//   &_list{
+//       list-style-type: none;
       
-      &_item{
-          display: inline-block;
-          padding: 10px 50px;
-          a{
-              @include paleta-menu;
-              text-decoration: none;
-          }
-          a:hover{
-             text-decoration: underline;
-          }
-      }
-  }
+//       &_item{
+//           display: inline-block;
+//           padding: 10px 50px;
+//           a{
+//               @include paleta-menu;
+//               text-decoration: none;
+//           }
+//           a:hover{
+//              text-decoration: underline;
+//           }
+//       }
+//   }
+
+// }
+
+// estilos del navegador animado inicio 
+section.barra-navegacion{
+background-color: #1f3e79;
+width: 100%;
+
+ul {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: center;
 
 }
+
+ul li {
+	list-style: none;
+}
+
+ul li a {
+	text-decoration: none;
+	color: white;
+	font-size: 3rem;
+	display: block;
+	padding: 10px 15px;
+	position: relative;
+}
+ul li a:hover{
+  color: #f2f2f2;
+}
+
+ul li a:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #0fbfae;
+	transform: scaleX(0);
+	transition: all 0.5s;
+	transform-origin: left
+}
+
+ ul li a:hover:before, ul li a:hover:after {
+ 	transform: scaleX(1);
+ }
+
+ ul li a:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color:yellow;
+	transform: scaleX(0);
+	transition: all 0.5s;
+	transform-origin: right
+}
+}
+
+
+// estilos de la barra de navegacion fin
 .logo{
   height: 12vh;
   padding: 5px 5px;
@@ -111,6 +177,8 @@ p.subtitle{
   color: #998578;
   text-transform: uppercase;
   letter-spacing: 3px;
+  font-family: "lato",sans-serif;
+
 }
 
 .twitter {
@@ -123,11 +191,14 @@ p.subtitle{
   -ms-transition: all .25s ease;
   -o-transition: all .25s ease;
   transition: all .25s ease;
+  font-family: "lato",sans-serif;
+
 }
 
 .twitter:hover {
   color: #FF7D6D;
   text-decoration: none;
+  font-family: "lato",sans-serif;
 }
 
 span {
@@ -179,34 +250,35 @@ img {
 }
 
 .float-fb {
-  top: 160px;
-}
-.float-fb:hover{
-  background-color: blue;
-  font-family: 'Courier New', Courier, monospace;
-}
-
-.float-tw {
   top: 215px;
 }
-.float-tw:hover {
-  background: linear-gradient(to right, #f9ed32, #ee2a7b);
-  font-family: Arial, Helvetica, sans-serif;
+.float-fb:hover{
+  background: linear-gradient(to right, #1f3e79, #0fbfae);
+  font-family: "lato",sans-serif;
 }
-
-.float-gp {
+// recuadro de instagram tw
+.float-tw {
   top: 270px;
 }
+.float-tw:hover {
+  background: linear-gradient(to right, #1f3e79, #0fbfae);
+  font-family: "lato",sans-serif;
+}
+// whats app recuadro
+.float-gp {
+  top: 160px;
+}
 .float-gp:hover{
-  background-color: rgb(25, 238, 78);
-  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, #1f3e79, #0fbfae);
+  font-family: "lato",sans-serif;
 
 }
 .float-rs {
   top: 325px;
 }
 .float-rs:hover {
-  background: red;
+  background: linear-gradient(to right, #1f3e79, #0fbfae);
+  font-family: "lato",sans-serif;
 }
 
 .float-ig {
