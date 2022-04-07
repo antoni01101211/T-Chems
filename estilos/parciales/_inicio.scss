@@ -233,7 +233,7 @@ ul.catCardList {
 }
 #catCardButton {
   position: absolute;
-  width: 190px;
+  width: 100%;
   bottom: 5px;
   transition: all 0.6s ease;
   transition:    all 0.6s ease;
@@ -304,16 +304,16 @@ div.startingPrice {
 }
 /*---------------------------------------------*/
 section.principales-clientes{
-    width: 80%;
+    width: 90%;
     border: 1px solid;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 100px;
-    gap: 4px;
+    grid-template-rows: 60px;
+    gap: 14px;
     div.cliente{
-        border: 1px solid #15BFBF;
+        border: 5px solid #15BFBF;
         text-align: center;
+        width: 100px;
     }
 }
 .imgCentrada{
@@ -344,12 +344,15 @@ section.principales-clientes{
 
   div.owl-carousel.owl-theme.owl-loaded.owl-drag{
     width: 96%;
-    margin: auto;
     display: grid;
-
+    margin: auto;
+    margin-top: 50px;
+    gap: 10px;
+    div.item{
+      width: 60%;
+    }
   }
   div.owl-nav{
-    width: 75px;
     margin: auto;
     font-size: 6rem;
   }

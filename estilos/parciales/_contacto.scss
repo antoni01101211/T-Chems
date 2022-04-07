@@ -30,12 +30,7 @@ section.formulario1{
         font-size: 1.6rem;
     }
 }
-div.btn-enviar1{
-    width: 25%;
-    height: 30px;
-    margin: auto;
-    margin-top: 50px;
-}
+
 .btn2 {
     cursor: pointer;
     margin-top: 1.5rem;
@@ -48,6 +43,8 @@ div.btn-enviar1{
     color: white;
     background-color: #1f3e79;
     border: none;
+    transition-property: all;
+    transition-duration: 1s;
   }
   .btn2:hover {
     background-color: white;
@@ -65,6 +62,8 @@ div.btn-enviar1{
     background-color: white;
     color: #1f3e79;
     border: none;
+    transition-property: all;
+    transition-duration: 1s;
   }
   .btn3:hover {
     color: white;

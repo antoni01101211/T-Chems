@@ -344,13 +344,6 @@ section.formulario1 select {
   font-size: 1.6rem;
 }
 
-div.btn-enviar1 {
-  width: 25%;
-  height: 30px;
-  margin: auto;
-  margin-top: 50px;
-}
-
 .btn2 {
   cursor: pointer;
   margin-top: 1.5rem;
@@ -363,6 +356,10 @@ div.btn-enviar1 {
   color: white;
   background-color: #1f3e79;
   border: none;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 .btn2:hover {
@@ -382,6 +379,10 @@ div.btn-enviar1 {
   background-color: white;
   color: #1f3e79;
   border: none;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 .btn3:hover {
@@ -771,7 +772,7 @@ ul.catCardList {
 
 #catCardButton {
   position: absolute;
-  width: 190px;
+  width: 100%;
   bottom: 5px;
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
@@ -855,21 +856,20 @@ div.startingPrice {
 
 /*---------------------------------------------*/
 section.principales-clientes {
-  width: 80%;
+  width: 90%;
   border: 1px solid;
   margin: auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: 100px;
-      grid-template-rows: 100px;
-  gap: 4px;
+  -ms-grid-rows: 60px;
+      grid-template-rows: 60px;
+  gap: 14px;
 }
 
 section.principales-clientes div.cliente {
-  border: 1px solid #15BFBF;
+  border: 5px solid #15BFBF;
   text-align: center;
+  width: 100px;
 }
 
 .imgCentrada {
@@ -904,13 +904,18 @@ section.principales-clientes div.cliente {
 /* principales clientes*/
 div.owl-carousel.owl-theme.owl-loaded.owl-drag {
   width: 96%;
-  margin: auto;
   display: -ms-grid;
   display: grid;
+  margin: auto;
+  margin-top: 50px;
+  gap: 10px;
+}
+
+div.owl-carousel.owl-theme.owl-loaded.owl-drag div.item {
+  width: 60%;
 }
 
 div.owl-nav {
-  width: 75px;
   margin: auto;
   font-size: 6rem;
 }
