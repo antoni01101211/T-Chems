@@ -195,8 +195,8 @@ img {
   right: -160px;
   z-index: 1000;
   font: normal normal 10px Arial;
-  -webkit-transition: all .25s ease;
-  transition: all .25s ease;
+  -webkit-transition: all 0.85s ease;
+  transition: all 0.85s ease;
 }
 
 .fa {
@@ -307,6 +307,23 @@ footer div.f-item div.fitem:nth-child(4) {
 footer div.f-item iframe.map {
   width: 100%;
   height: 240px;
+}
+
+@media (max-width: 1039px) {
+  section.barra-navegacion ul {
+    clear: both;
+    float: none;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  section.barra-navegacion ul div.nav_logo {
+    text-align: center;
+    float: none;
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+  }
 }
 
 section.formulario1 {
@@ -920,7 +937,7 @@ div.owl-nav {
   font-size: 6rem;
 }
 
-.cuadro-1 {
+section.cuadro-1 {
   display: -ms-grid;
   display: grid;
   width: 80%;
@@ -929,17 +946,26 @@ div.owl-nav {
   margin-bottom: 50px;
   -ms-grid-columns: 2fr 1fr;
       grid-template-columns: 2fr 1fr;
-  -ms-grid-rows: 250px;
-      grid-template-rows: 250px;
+  -ms-grid-rows: 450px;
+      grid-template-rows: 450px;
   gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.cuadro-1 div.info-nosotros {
+section.cuadro-1 div.info-nosotros {
   font-size: 1.7rem;
 }
 
-.cuadro-1 div.imagen-nosotros {
-  border: 1px solid greenyellow;
+section.cuadro-1 div.imagen-nosotros {
+  height: 350px;
+}
+
+section.cuadro-1 div.imagen-nosotros img {
+  border: 2px solid #1f3e79;
+  height: 100%;
+  width: 70%;
 }
 
 section.codigo-etica {

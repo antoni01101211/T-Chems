@@ -1,17 +1,24 @@
-.cuadro-1{
+section.cuadro-1{
     display: grid;
     width: 80%;
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 250px;
+    grid-template-rows: 450px;
     gap: 30px;
+    align-items: center;
     div.info-nosotros{
         font-size: 1.7rem;
     }
     div.imagen-nosotros{
-        border: 1px solid greenyellow;
+        height: 350px;
+        
+        img{
+            border:2px solid #1f3e79;
+            height: 100%;
+            width: 70%;
+        }
     }
 }
 section.codigo-etica{
