@@ -1,4 +1,24 @@
-
+section.contacto01{
+  width: 90%;
+  height: 600px;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  img{
+    width: 100%;
+    height: 600px;
+    margin: auto;
+  }
+}
+h2.subtitle-contacto{
+  margin: auto;
+  margin-top: 2rem;
+  width: 90%; 
+  margin-bottom: 2.2rem;
+  text-align: center;
+  font-size: 5rem;
+  color: $p1c1
+}
 section.formulario1{
     width: 80%;
     height: 1500 px;

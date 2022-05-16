@@ -1,6 +1,13 @@
+
+    video.completo{
+        margin: 0%;
+        margin-top: 99px;
+        height: 1100px;
+    }
+
 section.cuadro-1{
     display: grid;
-    width: 80%;
+    width: 90%;
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -9,7 +16,7 @@ section.cuadro-1{
     gap: 30px;
     align-items: center;
     div.info-nosotros{
-        font-size: 1.7rem;
+        font-size: 2.1rem;
     }
     div.imagen-nosotros{
         height: 350px;
@@ -20,6 +27,21 @@ section.cuadro-1{
             width: 70%;
         }
     }
+}
+section.principal-objetivo{
+    
+    height: auto;
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    div.principal-objetivo{
+        width: 90%;
+        margin: auto;
+    }
+    
+}
+p.general{
+    font-size: 2.1rem;
 }
 section.codigo-etica{
     display: grid;
@@ -55,5 +77,31 @@ section.sectores-enfocados{
                 width: 90%;
                 height: 99%;
             }
+    }
+}
+
+div.certificados-texto{
+    width: 90%;
+    margin: auto;
+    margin-top: 45px;
+    margin-bottom: 30px;
+}
+
+div.ajustador1{
+    width: 89%;
+    margin: auto;
+    margin-top: 0%;
+    button{
+        padding: 6px;
+        font-size: 2rem;
+        margin-bottom: 50px;
+        background-color: #1f3e79;
+        color: aliceblue;
+        cursor: pointer;
+        transition: all 1s;
+    }
+    button:hover{
+        background-color: azure;
+        color: #1f3e79;
     }
 }
