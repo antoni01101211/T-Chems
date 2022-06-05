@@ -251,7 +251,7 @@ img {
 .fl-fl a {
   color: #fff !important;
   text-decoration: none;
-  font-size: medium;
+  font-size: 2rem;
   text-align: center;
   line-height: 43px!important;
   vertical-align: top!important;
@@ -307,7 +307,7 @@ footer{
   background-color: $p1c1;
   color: #f2f2f2;
   display:grid;
-  grid-template-columns: 20% 20% 20% 20%;
+  grid-template-columns: 30% 20% 20% 20%;
   grid-template-rows: 250px;
   gap: 15px;
   align-content: center;
@@ -322,10 +322,24 @@ footer{
     width: 100%;
   }
   div.f-item-3{
-    width: 100%;    
+    width: 100%;
+    a{
+      color: #f2f2f2;
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
+      }
+    }    
   }
   div.f-item-4{
-    width: 100%;    
+    width: 100%;   
+    a{
+      color: #f2f2f2;
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
+      }
+    } 
   }
 }
 @media(max-width:1039px){

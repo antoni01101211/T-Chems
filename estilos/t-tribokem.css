@@ -224,7 +224,7 @@ img {
 .fl-fl a {
   color: #fff !important;
   text-decoration: none;
-  font-size: medium;
+  font-size: 2rem;
   text-align: center;
   line-height: 43px !important;
   vertical-align: top !important;
@@ -287,8 +287,8 @@ footer {
   color: #f2f2f2;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 20% 20% 20% 20%;
-      grid-template-columns: 20% 20% 20% 20%;
+  -ms-grid-columns: 30% 20% 20% 20%;
+      grid-template-columns: 30% 20% 20% 20%;
   -ms-grid-rows: 250px;
       grid-template-rows: 250px;
   gap: 15px;
@@ -316,8 +316,26 @@ footer div.f-item-3 {
   width: 100%;
 }
 
+footer div.f-item-3 a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+footer div.f-item-3 a:hover {
+  text-decoration: underline;
+}
+
 footer div.f-item-4 {
   width: 100%;
+}
+
+footer div.f-item-4 a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+footer div.f-item-4 a:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 1039px) {
@@ -566,8 +584,18 @@ section.descripcion {
 }
 
 section.descripcion p {
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: justify;
+}
+
+section.descripcion p a {
+  text-decoration: none;
+  color: #0fbfae;
+}
+
+section.descripcion p a:hover {
+  text-decoration: underline;
+  color: #1D3759;
 }
 
 section.marca {
@@ -931,6 +959,15 @@ div.ajustador1 button {
   cursor: pointer;
   -webkit-transition: all 1s;
   transition: all 1s;
+}
+
+div.ajustador1 button a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+div.ajustador1 button a:hover {
+  color: #1f3e79;
 }
 
 div.ajustador1 button:hover {

@@ -99,6 +99,13 @@ div.ajustador1{
         color: aliceblue;
         cursor: pointer;
         transition: all 1s;
+        a{
+            text-decoration: none;
+            color: aliceblue;
+            &:hover{
+                color: #1f3e79;
+            }
+        }
     }
     button:hover{
         background-color: azure;

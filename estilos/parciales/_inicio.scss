@@ -15,8 +15,16 @@ section.descripcion{
     margin: auto;
     height: 200px;
     p{
-      font-size: 2rem;
+      font-size: 2.5rem;
       text-align: justify;
+      a{
+        text-decoration: none;
+        color: #0fbfae;
+        &:hover{
+          text-decoration: underline;
+          color: #1D3759;
+        }
+      }
     }
 }
 section.marca{
