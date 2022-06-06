@@ -865,13 +865,13 @@ section.cuadro-1 div.info-nosotros {
 }
 
 section.cuadro-1 div.imagen-nosotros {
-  height: 350px;
+  margin-left: 100px;
+  height: 460px;
 }
 
 section.cuadro-1 div.imagen-nosotros img {
-  border: 2px solid #1f3e79;
   height: 100%;
-  width: 70%;
+  width: 90%;
 }
 
 section.principal-objetivo {
