@@ -49,7 +49,7 @@ h2.subtitle {
   width: 90%;
   margin-bottom: 2.2rem;
   text-align: start;
-  font-size: 5rem;
+  font-size: 5.5rem;
   color: #1D3759;
 }
 
@@ -226,12 +226,13 @@ img {
   text-decoration: none;
   font-size: 2.2rem;
   text-align: center;
-  line-height: 45px !important;
+  line-height: 40px !important;
   vertical-align: top !important;
 }
 
 .float-fb {
   top: 215px;
+  background-color: blue;
 }
 
 .float-fb:hover {
@@ -242,6 +243,7 @@ img {
 
 .float-tw {
   top: 270px;
+  background-color: #E1306C;
 }
 
 .float-tw:hover {
@@ -251,6 +253,7 @@ img {
 }
 
 .float-gp {
+  background-color: #2fff4e;
   top: 160px;
 }
 
@@ -261,6 +264,7 @@ img {
 }
 
 .float-rs {
+  background-color: red;
   top: 325px;
 }
 
