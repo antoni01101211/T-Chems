@@ -9,13 +9,17 @@
 * {
   box-sizing: border-box;
 }
-
+h2.subtitle-servicio{
+  margin: auto;
+  margin-top: 200px;
+}
 
 div.servicio-descripcion{
     width: 89%;
-    height: 30px;
+    height: 200px;
     margin: auto;
-    font-size: 1.8rem;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
 }
 // body {
 //   display: grid;
@@ -24,8 +28,9 @@ div.servicio-descripcion{
 
 .page-content {
   display: grid;
+  grid-template-rows: 500px 500px;
   grid-auto-rows: auto;
-  grid-gap: 2.9rem;
+  grid-gap: 2.5rem;
   padding: 1rem;
   max-width: 90%;
   margin:auto;
@@ -87,22 +92,22 @@ div.servicio-descripcion{
   transition: transform calc(var(--d) * 2) var(--e);
 }
 .card:nth-child(1):before {
-  background-image: url(../../imagenes/servicios/01-Calibracion.png);
+  background-image: url(../../imagenes/04-servicios/01-Calibracion.png);
 }
 .card:nth-child(2):before {
-  background-image: url(../../imagenes/servicios/02-Capacitación.png);
+  background-image: url(../../imagenes/04-servicios/02-Capacitación.png);
 }
 .card:nth-child(3):before {
-  background-image: url(../../imagenes/servicios/03-Diagnóstico.png);
+  background-image: url(../../imagenes/04-servicios/03-Diagnóstico.png);
 }
 .card:nth-child(4):before {
-  background-image: url(../../imagenes/servicios/04-Instalación.png);
+  background-image: url(../../imagenes/04-servicios/04-Instalación.png);
 }
 .card:nth-child(5):before {
-    background-image: url(../../imagenes/servicios/05-Mantenimiento.jpg);
+    background-image: url(../../imagenes/04-servicios/05-Mantenimiento.jpg);
   }
   .card:nth-child(6):before {
-    background-image: url(../../imagenes/servicios/06-Venta.png);
+    background-image: url(../../imagenes/04-servicios/06-Venta.png);
   }
 
 .content {
@@ -118,14 +123,14 @@ div.servicio-descripcion{
 
 
 .title {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   font-weight: bold;
   line-height: 1.6;
 }
 
 .copy {
   font-family: var(--font-serif);
-  font-size: 1.5rem;
+  font-size: 2.1rem;
   font-style: italic;
   line-height: 1.35;
 }
